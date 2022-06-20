@@ -1,0 +1,65 @@
+.contacts {
+    margin-top: 180px;
+    padding-bottom: 50px;
+    &-title {
+        font-family: 'ALS Gorizont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        color: #FFBE0B;
+        text-align: center;
+    }
+    &-block {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &_subtext {
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 36px;
+            
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+        &_tel {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            text-decoration-line: underline;
+            
+            color: #FFBE0B;
+            outline: none;
+            margin-bottom: 32px;
+        }
+        &_logo {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            
+            color: #FFBE0B;
+            margin-bottom: 60px;
+        }
+        &_bigtext {
+            font-family: 'ALS Gorizont';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+
+            text-shadow: 1px 1px 0 #FFBE0B,
+                            1px -1px 0 #FFBE0B,
+                            -1px 1px 0 #FFBE0B,
+                            -1px -1px 0 #FFBE0B;
+                            color: #272727;
+        }
+    }
+}

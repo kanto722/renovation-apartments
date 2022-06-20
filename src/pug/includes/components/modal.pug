@@ -1,0 +1,20 @@
+.modal-dialog
+    .container 
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal")
+                    span(aria-hidden="true") ×
+                    
+                h4#myModalLabel.modal-title
+                    | Оставьте номер телефона<br>
+                    | и мы Вам перезвоним
+            .modal-body
+                form(role='form' method='GET' action='https://www.google.com/')
+                    div.form-group
+                        label(for='name') Ваше имя
+                        input#name.form-control(type='text', placeholder='Имя' name='name')
+                    div.form-group
+                        label(for='email') Ваш номер телефона
+                        input#email.form-control(type='phone', placeholder='+7(000)00 00 00' name='email')
+                    button.btn.btn-primary(type="submit", name="asdf") заказать звонок
+                    button.btn.btn-default(type="button", data-dismiss="modal")

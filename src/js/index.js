@@ -22,3 +22,36 @@ window.onload = onLoadHandler;
 /**
  *----------------------------------------------
  */
+ var swiper = new Swiper(".mySwiper", {
+
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper3 = new Swiper(".mySwiper3", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper4 = new Swiper(".mySwiper4", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper5 = new Swiper(".mySwiper5", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper6 = new Swiper(".mySwiper6", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -1,0 +1,73 @@
+.info {
+    margin-top: 230px;
+    &-content {
+
+    }
+    &-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        &_text {
+            font-family: 'ALS Gorizont';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            color: #FFFFFF;
+            span {
+                color: #FFBE0B;
+            }
+        }
+    }
+    &-container {
+        margin-top: 102px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        &__block {
+            background: #272727;
+            border: 1px solid #FFBE0B;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+            position: relative;
+            padding: 32px 18px 36px 14px;
+            max-width: 560px;
+            margin-bottom: 78px;
+            margin-right: 61px;
+            &_number {
+                font-family: 'ALS Gorizont';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 150px;
+                line-height: 150px;
+                z-index: -1;
+                text-shadow: 1px 1px 0 #FFBE0B,
+                            1px -1px 0 #FFBE0B,
+                            -1px 1px 0 #FFBE0B,
+                            -1px -1px 0 #FFBE0B;
+                            color: #272727;
+                            position: absolute;
+                            top: -80px;
+            }
+            &_title {
+                font-family: 'ALS Gorizont';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 40px;
+                color: #FFBE0B;
+                margin-top: 0;
+                margin-bottom: 21px;
+            }
+            &_text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+}

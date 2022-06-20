@@ -1,0 +1,105 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 33px;
+        &_text {
+            font-family: 'ALS Gorizont';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            color: #FFBE0B;
+        }
+    }
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 58px;
+        &__block {
+            border: 1px solid #FFFFFF;
+            padding: 0px 24px 39px 24px;
+            min-width: 443px;
+            min-height: 461px;
+            max-width: 467px;
+            max-height: 485px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            &_img {
+                position: absolute;
+                top: 26px;
+                left: -30px;
+            }
+            &_title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;
+                text-transform: uppercase;
+                
+                color: #FFBE0B;
+                text-shadow: 1px 1px 0 #000000,
+                    1px -1px 0 #000000,
+                    -1px 1px 0 #000000,
+                    -1px -1px 0 #000000;
+                margin-bottom: 13px;
+            }
+            &_text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                text-transform: uppercase;
+                
+                color: #FFFFFF;
+                
+            }
+        }
+        &__block:first-child {
+            margin-right: 99px;
+        }
+    }
+    &-button {
+        background: #FFBE0B;
+        max-width: 385px;
+        padding: 27px 0px;
+
+        &_link {
+            padding: 27px 89px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &_text {
+        font-family: 'ALS Gorizont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        text-shadow: 1px 1px 0 #FFBE0B,
+                    1px -1px 0 #FFBE0B,
+                    -1px 1px 0 #FFBE0B,
+                    -1px -1px 0 #FFBE0B;
+        color: #2C2C2C;
+        transform: translate(-649px, 395px) rotate(-90deg);
+        position: absolute;
+        
+    }
+}
