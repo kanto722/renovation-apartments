@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArslanDev666/gulp-november-2020.git"
+    "url": "git+https://github.com/kanto722/renovation-apartments"
   },
   "keywords": [
     "gulp"
@@ -13,19 +13,12 @@
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
-    "deploy": "gulp deploy",
-    "stylelint:fix": "stylelint \"src/scss/**/*.scss\" --fix -s scss",
-    "stylelint:lint": "stylelint \"src/scss/**/*.scss\" -s scss"
+    "deploy": "gulp deploy"
   },
-  "pre-commit": [
-    "stylelint:lint"
-  ],
-  "author": "Arslan Mustafin <arslan.mustafin.dev@gmail.com>",
+
+  "author": "Kanto722 <kanto72@yandex.ru>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ArslanDev666/gulp-november-2020/issues"
-  },
-  "homepage": "https://github.com/ArslanDev666/gulp-november-2020#readme",
+  "homepage": "https://github.com/kanto722/renovation-apartments#readme",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",

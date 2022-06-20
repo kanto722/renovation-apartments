@@ -1,0 +1,92 @@
+.promo {
+    position: relative;
+    &-content {
+        display: flex;
+        flex-direction: column;
+    }
+    &-center {
+        &_title {
+            font-family: 'ALS Gorizont';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            
+            color: #FFBE0B;
+            margin-bottom: 18px;
+        }
+        &_text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            
+            color: #FFFFFF;
+            margin-bottom: 37px;
+        }
+        &_link {
+            max-width: 385px;
+            width: 100%;
+            padding: 27px 0px;
+
+            a {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                
+                color: #FFFFFF;
+                background: #FFBE0B;
+                padding: 27px 90px;
+                text-decoration: none;
+            }
+        }
+    }
+    &-plug {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 127px;
+        background: rgba(41, 46, 53, 0.22);
+        backdrop-filter: blur(20px);
+        padding: 29px 75px 24px 75px;
+        max-width: 804px;
+        align-self: center;
+        &__block {
+            display: flex;
+            align-items: center;
+
+            &_number {
+                font-family: 'ALS Gorizont';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 50px;
+                color: #FFBE0B;
+                margin-right: 7px;
+            }
+            &_text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 25px;
+                line-height: 30px;
+                color: #FFFFFF;
+                max-width: 166px;
+            }
+        }
+    }
+    &-fon {
+        position: absolute;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+}
