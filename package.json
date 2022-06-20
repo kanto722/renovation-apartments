@@ -4,8 +4,7 @@
   "description": "gulp template",
   "main": "index.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kanto722/renovation-apartments"
+    "type": "git"
   },
   "keywords": [
     "gulp"
@@ -18,7 +17,6 @@
 
   "author": "Kanto722 <kanto72@yandex.ru>",
   "license": "ISC",
-  "homepage": "https://github.com/kanto722/renovation-apartments#readme",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
