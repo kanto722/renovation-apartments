@@ -1,0 +1,26 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+
+  // outline: 1px red solid;
+  &:active,
+  &:focus {
+    // -webkit-tap-highlight-color: transparent;
+
+    outline: none;
+  }
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: $main-font;
+}
+
+main {
+  flex-grow: 1;
+}
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}

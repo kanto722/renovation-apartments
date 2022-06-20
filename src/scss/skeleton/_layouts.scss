@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+
+  max-width: calc($s-container-width + $s-padding-container);
+
+  margin: 0 auto;
+  padding: $s-padding-container;
+}

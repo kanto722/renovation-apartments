@@ -1,0 +1,4 @@
+mixin webpImage( width=640, height=360, name,  type="jpg", folder="" , alt=name)
+  picture
+    source(srcset=`./images/webp/${name}.webp` type="image/webp")
+    img(src=`./images${folder !=='' ? '/'+folder : '/'}${name}.${type}` alt="alt"  width=width height=height)
