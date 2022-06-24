@@ -23,7 +23,18 @@ window.onload = onLoadHandler;
  *----------------------------------------------
  */
  var swiper = new Swiper(".mySwiper", {
-
+  autoplay: {
+    delay: 3000,
+  },
+});
+var swiper1 = new Swiper(".mySwiper1", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+  },
 });
 var swiper2 = new Swiper(".mySwiper2", {
   navigation: {
@@ -55,3 +66,42 @@ var swiper6 = new Swiper(".mySwiper6", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const btn = document.querySelector('#btn-modal');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.modal-close');
+const opac = document.querySelector('.modal-opac');
+
+
+document.addEventListener('click', function (e) {
+  if (e.target.dataset.toggle === 'btn') {
+    modal.classList.add('modal__active');
+    opac.classList.add('modal-opac__active');
+  }
+});
+
+close.addEventListener('click', function(e) {
+  modal.classList.remove('modal__active');
+  opac.classList.remove('modal-opac__active');
+
+});
+
+
+
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}

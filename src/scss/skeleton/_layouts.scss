@@ -4,5 +4,22 @@
   max-width: calc($s-container-width + $s-padding-container);
 
   margin: 0 auto;
-  padding: 0px 119px;
+  padding: 0 119px;
+
+
+}
+@include media-laptop () {
+  .container {
+    padding: 0 60px;
+  }
+}
+@include media-tablet () {
+  .container {
+    padding: 0 25px;
+  }
+}
+@include media-mobile-small () {
+  .container {
+    padding: 0 20px;
+  }
 }

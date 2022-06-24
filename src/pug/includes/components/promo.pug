@@ -1,13 +1,24 @@
-.promo 
+.promo.element-animation 
     .container 
         .promo-content 
-            .promo-center 
-                h1.promo-center_title 
-                    | Получите бесплатный расчет<br> стоимости ремонта
-                h2.promo-center_text 
-                    | Ремонт квартир, домов, офисов, помещений любого назначения
-                .promo-center_link
-                    a(href="/") заказать звонок
+            .promo-container
+                .promo-center 
+                    h1.promo-center_title 
+                        | Получите бесплатный расчет<br> стоимости ремонта
+                    h2.promo-center_text 
+                        | Ремонт квартир, домов, офисов, помещений любого назначения
+                    .promo-center_link
+                        a#btn-modal(data-toggle="btn") заказать звонок
+                .promo-slider 
+                    .swiper.mySwiper1 
+                        .swiper-wrapper 
+                            .swiper-slide
+                                img(src="assets/images/foto-1-7.jpg")
+                            .swiper-slide
+                                img(src="assets/images/foto-1-5.jpg")
+                            .swiper-slide
+                                img(src="assets/images/foto-4-4.jpg")
+
             .promo-plug 
                 .promo-plug__block 
                     p.promo-plug__block_number 
@@ -27,4 +38,3 @@
                     p.promo-plug__block_text
                         | лет<br>
                         | опыта
-        img(src="assets/images/promo-fon.png").promo-fon    

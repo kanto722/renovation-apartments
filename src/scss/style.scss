@@ -5,11 +5,14 @@
 @import "design-tokens/media-queries";
 @import "design-tokens/spacing";
 
+
 // 2. Settings
 @import "setting/global";
 
 // 3.  Tools
 @import "tools/font";
+@import "tools/media";
+
 // 4. Generic
 @import "generic/normalize";
 @import "generic/font-face";

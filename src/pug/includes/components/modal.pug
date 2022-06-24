@@ -1,20 +1,22 @@
-.modal-dialog
-    .container 
-        .modal-content
-            .modal-header
-                button.close(type="button", data-dismiss="modal")
-                    span(aria-hidden="true") ×
-                    
-                h4#myModalLabel.modal-title
-                    | Оставьте номер телефона<br>
-                    | и мы Вам перезвоним
-            .modal-body
-                form(role='form' method='GET' action='https://www.google.com/')
-                    div.form-group
-                        label(for='name') Ваше имя
-                        input#name.form-control(type='text', placeholder='Имя' name='name')
-                    div.form-group
-                        label(for='email') Ваш номер телефона
-                        input#email.form-control(type='phone', placeholder='+7(000)00 00 00' name='email')
-                    button.btn.btn-primary(type="submit", name="asdf") заказать звонок
-                    button.btn.btn-default(type="button", data-dismiss="modal")
+.modal
+    .modal-container
+        .modal-content 
+            .modal-body 
+                .modal-body__title 
+                    .modal-body__title_text 
+                        | Оставьте номер телефона<br> 
+                        | и мы Вам перезвоним
+                form(action="#").modal-form
+                    .modal-form__block 
+                         p.modal-form__block_text 
+                            | Ваше имя
+                         input(type='text' placeholder='Имя' name='name').modal-form__block_input
+                    .modal-form__block 
+                         p.modal-form__block_text 
+                            | Ваш номер телефона
+                         input(type='phone' placeholder='+7(000)00 00 00' name='email').modal-form__block_input
+                    .modal-form__button 
+                        button(type="submit" name="submit").modal-form__btn
+                            | Заказать звонок
+            .modal-close
+                | ×

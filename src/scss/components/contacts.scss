@@ -1,65 +1,123 @@
-.contacts {
-    margin-top: 180px;
-    padding-bottom: 50px;
-    &-title {
-        font-family: 'ALS Gorizont';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 50px;
-        color: #FFBE0B;
-        text-align: center;
-    }
-    &-block {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        &_subtext {
-            font-family: 'Inter';
-            font-style: italic;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 36px;
-            
-            color: #FFFFFF;
-            margin-bottom: 32px;
-        }
-        &_tel {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 30px;
-            line-height: 36px;
-            text-decoration-line: underline;
-            
-            color: #FFBE0B;
-            outline: none;
-            margin-bottom: 32px;
-        }
-        &_logo {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 25px;
-            line-height: 30px;
-            
-            color: #FFBE0B;
-            margin-bottom: 60px;
-        }
-        &_bigtext {
-            font-family: 'ALS Gorizont';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
+@import "../design-tokens/media-queries";
+@import "../tools/media";
 
-            text-shadow: 1px 1px 0 #FFBE0B,
-                            1px -1px 0 #FFBE0B,
-                            -1px 1px 0 #FFBE0B,
-                            -1px -1px 0 #FFBE0B;
-                            color: #272727;
-        }
+.contacts {
+  margin-top: 180px;
+  padding-bottom: 50px;
+  &-title {
+    text-align: center;
+
+    color: #FFBE0B;
+    filter: drop-shadow(0 0 6px #FFBE0B);
+
+    font-family: "ALS Gorizont";
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 50px;
+  }
+  &-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 60px;
+
+    text-align: center;
+    &_subtext {
+      margin-bottom: 32px;
+
+      color: #FFF;
+
+      font-family: "Inter";
+      font-size: 30px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 36px;
     }
+    &_tel {
+      margin-bottom: 32px;
+
+      color: #FFBE0B;
+      outline: none;
+
+      font-family: "Inter";
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 36px;
+      text-decoration-line: underline;
+    }
+    &_logo {
+      margin-bottom: 60px;
+
+      color: #FFBE0B;
+      filter: drop-shadow(0 0 6px #FFBE0B);
+
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 30px;
+    }
+    &_bigtext {
+      color: #272727;
+
+      text-shadow: 1px 1px 0 #FFBE0B, 1px -1px 0 #FFBE0B, -1px 1px 0 #FFBE0B, -1px -1px 0 #FFBE0B;
+      filter: drop-shadow(0 0 6px #FFBE0B);
+
+      font-family: "ALS Gorizont";
+      font-size: 50px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 50px;
+    }
+  }
 }
+
+@include media-laptop () {
+
+}
+@include media-tablet-horizontal () {
+  .contacts-block{
+    margin-top: 30px;
+  }
+  .contacts-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contacts-block_subtext {
+    margin-bottom: 15px;
+
+    font-size: 25px;
+  }
+  .contacts-block_logo {
+    margin-bottom: 30px;
+  }
+}
+@include media-tablet () {
+  .contacts-block_bigtext {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@include media-mobile (){
+  .contacts-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .contacts-block {
+    margin-top: 15px;
+  }
+  .contacts-block_tel {
+    margin-bottom: 15px;
+  }
+  .contacts-block_bigtext {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@include media-mobile-small (){
+
+}
+

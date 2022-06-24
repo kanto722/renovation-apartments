@@ -1,48 +1,123 @@
+@import "../design-tokens/media-queries";
+@import "../tools/media";
+#btn-modal {
+  cursor: pointer;
+}
 .header {
-    background: none;
-    padding: 42px 0px;
-    width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+
+  width: 100%;
+  padding: 42px 0;
+
+  background: none;
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    &_link {
+      text-decoration: none;
+
+      color: #FFBE0B;
+      filter: drop-shadow(0 0 6px #FFBE0B);
+
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 30px;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px 29px;
+
+    border: 1px solid #FFBE0B;
+    background: #161616;
+    &_text {
+      margin-bottom: 6px;
+
+      color: #FFF;
+
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 24px;
+    }
+    &_tel {
+      color: #FFBE0B;
+
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 30px;
+      text-decoration-line: underline;
+    }
+  }
+}
+.element-animation {
+  transition: .8s;
+
+  opacity: 0;
+}
+.element-animation.element-show {
+  transition: .8s;
+
+  opacity: 1;
+}
+@include media-tablet () {
+  .header {
+    padding: 20px 0;
+
     &-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
     }
     &__logo {
-        &_link {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 25px;
-            line-height: 30px;
-            color: #FFBE0B;
-            text-decoration: none;
-        }
+      &_link {
+
+      }
     }
     &__block {
-        background: #161616;
-        border: 1px solid #FFBE0B;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 29px;
-        &_text {
-            font-family: 'Inter';
-            font-style: italic;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;  
-            margin-bottom: 6px;
-        }
-        &_tel {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 30px;
-            text-decoration-line: underline;
-            
-            color: #FFBE0B;
-        }
+
+      &_text {
+        font-size: 16px;
+        line-height: 15px;
+      }
+      &_tel {
+
+      }
     }
+  }
+}
+
+@include media-mobile () {
+  .header {
+    padding: 20px 0;
+
+  }
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-bottom: 15px;
+  }
+  .header__logo_link {
+    font-size: 20px;
+  }
+  .header__block {
+    padding: 10px 18px;
+
+  }
+  .header__block_tel {
+    font-size: 20px;
+  }
 }

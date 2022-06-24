@@ -1,82 +1,185 @@
+@import "../design-tokens/media-queries";
+@import "../tools/media";
 .proces {
-    margin-top: 200px;
-    &-content {
+  margin-top: 200px;
+  &-content {
 
-    }
-    &-title {
-        font-family: 'ALS Gorizont';
-        font-style: normal;
-        font-weight: 700;
+  }
+  &-title {
+    margin-bottom: 72px;
+
+    text-align: center;
+
+    color: #FFBE0B;
+    filter: drop-shadow(0 0 6px #FFBE0B);
+
+    font-family: "ALS Gorizont";
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 50px;
+
+  }
+  &-block {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-bottom: 49px;
+    &__item {
+      &_number {
+        text-transform: uppercase;
+
+        color: #000;
+
+        font-family: "ALS Gorizont";
         font-size: 50px;
+        font-weight: 500;
+        font-style: normal;
         line-height: 50px;
-        color: #FFBE0B;
-        text-align: center;
-        margin-bottom: 72px;
+      }
+      &_text {
+        max-width: 650px;
+
+
+        color: #FFF;
+        filter: drop-shadow(0 0 6px #FFF);
+
+        font-family: "Inter";
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 36px;
+      }
     }
-    &-block {
+    &__item-top {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 20px;
+      &__circle{
         display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        margin-bottom: 49px;
-        &__item {
-            &_number {
-                font-family: 'ALS Gorizont';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 50px;
-                line-height: 50px;
-                text-transform: uppercase;
-                color: #000000;                
-            }
-            &_text {
-                max-width: 650px;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 30px;
-                line-height: 36px;
-                text-transform: capitalize;
-                
-                color: #FFFFFF;
-            }
-        }
-        &__item-top {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            &__circle{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100px;
-                height: 100px;
-                border-radius: 100%;
-                background: #FFBE0B;
-                margin-right: 21px;
-            }
-            &_text {
-                font-family: 'ALS Gorizont';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 30px;
-                line-height: 30px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
-                text-transform: uppercase;
-                color: #FFFFFF;
-                
-            }
-        }
-        &_img {
+        width: 100px;
+        height: 100px;
+        margin-right: 21px;
 
-        }
+        border-radius: 100%;
+        background: #FFBE0B;
+        filter: drop-shadow(0 0 6px #FFBE0B);
+
+      }
+      &_text {
+        text-transform: uppercase;
+
+        color: #FFF;
+        filter: drop-shadow(0 0 6px #FFF);
+
+        font-family: "ALS Gorizont";
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+
+      }
     }
+    &_img {
+
+    }
+  }
 }
 .proces-block--end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 .proces-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+@include media-laptop () {
+
+}
+@include media-tablet-horizontal () {
+  .proces-block_img {
+    display: none;
+  }
+  .proces-block {
+    justify-content: flex-start;
+
+    margin-bottom: 60px;
+  }
+  .proces-title {
+    font-size: 40px;
+  }
+  .proces-block--end {
+    justify-content: flex-start;
+  }
+  .proces-block__item-top_text {
+    line-height: 40px;
+  }
+  .proces-block__item-top__circle {
+    width: 75px;
+    height: 75px;
+  }
+  .proces-block__item_number {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@include media-tablet () {
+  .proces-block__item_text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .proces-block__item-top_text {
+    font-size: 25px;
+  }
+  .proces-block {
+    justify-content: flex-start;
+  }
+  .proces-block {
+    margin-bottom: 40px;
+  }
+  .proces-block__item-top__circle {
+    width: 60px;
+    height: 50px;
+  }
+  .proces-block__item_number {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@include media-mobile (){
+  .proces-block__item-top {
+    flex-direction: column;
+  }
+  .proces-block__item-top__circle {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .proces-block__item_text {
+    font-size: 18px;
+    line-height: 20px;
+    br {
+      display: none;
+    }
+  }
+  .proces-block__item-top_text {
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .proces-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@include media-mobile-small (){
+
+}
+
