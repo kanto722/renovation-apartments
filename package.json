@@ -14,7 +14,6 @@
     "build": "gulp build",
     "deploy": "gulp deploy"
   },
-
   "author": "Kanto722 <kanto72@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
@@ -72,7 +71,8 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
-    "gsap": "^3.6.1",
+    "animate.css": "^4.1.1",
+    "gsap": "^3.10.4",
     "jquery": "^3.6.0"
   }
 }

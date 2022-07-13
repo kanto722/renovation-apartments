@@ -63,16 +63,19 @@
     }
   }
 }
+// animation
 .element-animation {
-  transition: .8s;
+  transition: 1s;
 
   opacity: 0;
 }
 .element-animation.element-show {
-  transition: .8s;
+  transition: 1s;
 
   opacity: 1;
 }
+
+
 @include media-tablet () {
   .header {
     padding: 20px 0;

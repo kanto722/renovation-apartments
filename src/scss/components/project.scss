@@ -59,7 +59,7 @@
 .project {
   position: relative;
 
-  margin-top: 150px;
+  margin-top: 120px;
   &-title {
     text-align: center;
     &_text {
@@ -83,9 +83,31 @@
 
     .swiper-slide {
       .project-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         img {
           max-width: 263px;
-          max-height: 468px;
+          max-height: 388px;
+        }
+        p {
+          margin-top: 15px;
+
+          text-align: center;
+
+          color: #FFF;
+
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 500;
+          font-style: normal;
+          line-height: 26px;
+
+
+        }
+        span {
+          color: #FFBE0B;
+
         }
       }
 
@@ -120,7 +142,7 @@
     flex-direction: column;
 
     max-width: 378px;
-    max-height: 526px;
+    max-height: 510px;
 
     border: 1px solid #FFBE0B;
   }
@@ -133,7 +155,7 @@
     flex-direction: column;
 
     max-width: 378px;
-    max-height: 526px;
+    max-height: 510px;
 
     border: 1px solid #FFBE0B;
   }
@@ -146,7 +168,7 @@
     flex-direction: column;
 
     max-width: 378px;
-    max-height: 526px;
+    max-height: 510px;
 
     border: 1px solid #FFBE0B;
   }
@@ -159,7 +181,7 @@
     flex-direction: column;
 
     max-width: 378px;
-    max-height: 526px;
+    max-height: 510px;
 
     border: 1px solid #FFBE0B;
   }
@@ -172,7 +194,20 @@
     flex-direction: column;
 
     max-width: 378px;
-    max-height: 526px;
+    max-height: 510px;
+
+    border: 1px solid #FFBE0B;
+  }
+}
+.mySwiper7 {
+  max-width: 380px;
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 378px;
+    max-height: 510px;
 
     border: 1px solid #FFBE0B;
   }
@@ -180,6 +215,7 @@
 .d-none-adapt {
   display: none;
 }
+
 
 @include media-custom(1400px) {
   .swiper-wrapper {
@@ -218,12 +254,16 @@
     }
   }
   .mySwiper5 {
-    height: 32%;
     margin-bottom: 40px;
+    .swiper {
+      height: 100%;
+    }
   }
   .mySwiper6 {
-    height: 32%;
     margin-bottom: 40px;
+    .swiper {
+      height: 100%;
+    }
   }
   .project .project-slider .swiper-slide .project-block img {
     max-height: 376px;
@@ -250,6 +290,9 @@
   }
 }
 @include media-tablet () {
+  .project {
+    margin-top: 60px;
+  }
   .project-title_text {
     font-size: 35px;
     line-height: 35px;
@@ -262,10 +305,37 @@
   }
   .d-none-adapt {
     display: block;
+    .swiper-slide img {
+      height: 400px;
+    }
+    p {
+      margin-top: 15px;
+
+      text-align: center;
+
+      color: #FFF;
+
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 26px;
+
+
+    }
+    span {
+      color: #FFBE0B;
+
+    }
+
+
   }
   .project-title_text {
     font-size: 30px;
     line-height: 30px;
+  }
+  .swiper-slide {
+    border: none !important;
   }
 }
 @include media-mobile-small (){

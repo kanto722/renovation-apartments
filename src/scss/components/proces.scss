@@ -1,7 +1,7 @@
 @import "../design-tokens/media-queries";
 @import "../tools/media";
 .proces {
-  margin-top: 200px;
+  margin-top: 120px;
   &-content {
 
   }
@@ -43,7 +43,6 @@
 
 
         color: #FFF;
-        filter: drop-shadow(0 0 6px #FFF);
 
         font-family: "Inter";
         font-size: 30px;
@@ -76,7 +75,6 @@
         text-transform: uppercase;
 
         color: #FFF;
-        filter: drop-shadow(0 0 6px #FFF);
 
         font-family: "ALS Gorizont";
         font-size: 30px;
@@ -89,10 +87,38 @@
     &_img {
 
     }
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+
+      margin-top: 55px;
+      margin-bottom: 55px;
+      padding: 20px;
+
+      border-radius: 20px;
+      background: #FFBE0B;
+      filter: drop-shadow(0 0 6px #FFBE0B);
+      &_text {
+        text-transform: uppercase;
+
+        color: #FFF;
+
+        font-family: "ALS Gorizont";
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+      }
+    }
   }
 }
 .proces-block--end {
   justify-content: flex-end;
+}
+.proces-block_img--none {
+  pointer-events: none;
+
+  opacity: 0;
 }
 .proces-container {
   display: flex;
@@ -105,6 +131,9 @@
 }
 @include media-tablet-horizontal () {
   .proces-block_img {
+    display: none;
+  }
+  .proces-block_img--none {
     display: none;
   }
   .proces-block {
@@ -131,6 +160,9 @@
   }
 }
 @include media-tablet () {
+  .proces {
+    margin-top: 60px;
+  }
   .proces-block__item_text {
     font-size: 20px;
     line-height: 26px;
@@ -177,6 +209,13 @@
   .proces-title {
     font-size: 30px;
     line-height: 30px;
+  }
+  .proces-block__wrapper {
+    &_text {
+      text-align: center;
+
+      font-size: 25px;
+    }
   }
 }
 @include media-mobile-small (){

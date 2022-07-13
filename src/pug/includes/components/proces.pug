@@ -1,10 +1,10 @@
-.proces.element-animation
+.proces
     .container 
         .proces-content 
-            h2.proces-title 
+            h2.proces-title.element-animation  
                 | Как происходит процесс работы
-            .proces-container 
-                .proces-block 
+            .proces-container  
+                .proces-block.element-animation  
                     .proces-block__item
                         .proces-block__item-top
                             .proces-block__item-top__circle 
@@ -13,61 +13,93 @@
                             p.proces-block__item-top_text 
                                 | Заявка 
                         p.proces-block__item_text
-                            | Вы оставляете заявку или звоните нам, после<br> этого мы назначаем с Вами встречу, где<br> проконсультируем Вас по всем вопросам.
+                            | Вы звоните нам или оставляете заявку ,<br> мы договариваемся о встречи.
                     img(src="assets/images/Arrow.svg").proces-block_img
-            .proces-block.proces-block--end
-                .proces-block__item
-                    .proces-block__item-top
-                        .proces-block__item-top__circle 
-                            span.proces-block__item_number 
-                                | 02
-                        p.proces-block__item-top_text 
-                            | Встреча и консультация
-                    p.proces-block__item_text
-                        | На встрече мы обговариваем все<br> 
-                        | моменты и выявляем, какой<br> 
-                        | ремонт Вам нужен.
-                
-            .proces-block 
-                .proces-block__item
-                    .proces-block__item-top
-                        .proces-block__item-top__circle 
-                            span.proces-block__item_number 
-                                | 03
-                        p.proces-block__item-top_text 
-                            | Заключаем договор
-                    p.proces-block__item_text
-                        | Далее мы заключаем с Вами<br> коммерческое предложение,<br> устанавливаем сроки.
-                img(src="assets/images/Arrow.svg").proces-block_img
-            .proces-block.proces-block--end 
-                .proces-block__item
-                    .proces-block__item-top
-                        .proces-block__item-top__circle 
-                            span.proces-block__item_number 
-                                | 04
-                        p.proces-block__item-top_text 
-                            | Оплата
-                    p.proces-block__item_text
-                        | Оплата  без предоплаты, расчёт<br> производится после каждого этапа. 
-                
-            .proces-block 
-                .proces-block__item
-                    .proces-block__item-top
-                        .proces-block__item-top__circle 
-                            span.proces-block__item_number 
-                                | 05
-                        p.proces-block__item-top_text 
-                            | Работа в 3 этапа
-                    p.proces-block__item_text
-                        | Работу выполняем в 3 этапа -<br> черновой, чистовой и подчистовой. 
-                img(src="assets/images/Arrow.svg").proces-block_img
-            .proces-block.proces-block--end
-                .proces-block__item
-                    .proces-block__item-top
-                        .proces-block__item-top__circle 
-                            span.proces-block__item_number 
-                                | 06
-                        p.proces-block__item-top_text 
-                            | Сдача проекта + оплата
-                    p.proces-block__item_text
-                        | Мы представляем Вам проделанную<br> работу, вы производите последнюю<br> оплату.
+                .proces-block.proces-block--end.element-animation 
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 02
+                            p.proces-block__item-top_text 
+                                | Встреча и консультация
+                        p.proces-block__item_text
+                            | Мы обсуждаем стиль,<br> стоимость и сроки ремонта.
+                    
+                .proces-block.element-animation  
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 03
+                            p.proces-block__item-top_text 
+                                | Коммерческое предложение и договор
+                        p.proces-block__item_text
+                            | Составляем  смету ,<br> после ее одобрения Вами.<br> подписываем договор.
+                    img(src="assets/images/Arrow.svg").proces-block_img
+                .proces-block.proces-block--end.element-animation  
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 04
+                            p.proces-block__item-top_text 
+                                | Оплата
+                        p.proces-block__item_text
+                            | Работаем без предоплаты!<br> Расчёт производится после окончания каждого этапа. 
+                .proces-block__wrapper 
+                    p.proces-block__wrapper_text
+                        | Этапы отделки    
+                .proces-block.element-animation  
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 01
+                            p.proces-block__item-top_text 
+                                | Черновая отделка
+                        p.proces-block__item_text
+                            | Штукатурка, шпаклевка, вентиляция, разводка воды и отопления, электрика, стяжка, установка входной двери. 
+                    img(src="assets/images/Arrow.svg").proces-block_img
+                .proces-block.proces-block--end.element-animation 
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 02
+                            p.proces-block__item-top_text 
+                                | Предчистовая отделка
+                        p.proces-block__item_text
+                            | Укладка плитки,<br> финишная шпаклевка,<br> монтаж встроенных подсветок(если нужно),<br> монтаж потолков ( если не натяжные).
+                .proces-block.element-animation  
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 03
+                            p.proces-block__item-top_text 
+                                | Чистовой - финишный
+                        p.proces-block__item_text
+                            | Поклейка обоев ,<br> монтаж напольных покрытий ( если не плитка),<br> Установка сантехники,<br> осветительных приборов,<br> декора, плинтусов,<br> межкомнатных дверей,<br> натяжных потолков.<br> Вывоз мусора , техническая уборка.
+                    img(src="assets/images/Arrow.svg").proces-block_img
+                .proces-block.proces-block--end.element-animation 
+                    .proces-block__item
+                        .proces-block__item-top
+                            .proces-block__item-top__circle 
+                                span.proces-block__item_number 
+                                    | 04
+                            p.proces-block__item-top_text 
+                                | Сдача объекта
+                        p.proces-block__item_text
+                            | После завершения  работ<br> по третьему этапу,<br> производится сдача объекта и окончательный расчёт.
+                //- .proces-block.proces-block--start.element-animation  
+                //-     .proces-block__item
+                //-         .proces-block__item-top
+                //-             .proces-block__item-top__circle 
+                //-                 span.proces-block__item_number 
+                //-                     | 09
+                //-             p.proces-block__item-top_text 
+                //-                 | сдача проекта + оплата
+                //-         p.proces-block__item_text
+                //-             | Мы представляем Вам проделанную<br> работу, вы производите последнюю<br> оплату. 
+                //-     img(src="assets/images/Arrow.svg").proces-block_img--none

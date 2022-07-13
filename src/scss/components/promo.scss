@@ -17,8 +17,8 @@
   &-center {
     margin-right: 20px;
     &_title {
+      max-width: 780px;
       margin-bottom: 18px;
-      filter: drop-shadow(0 0 6px #FFBE0B);
 
       color: #FFBE0B;
 
@@ -27,13 +27,12 @@
       font-weight: 700;
       font-style: normal;
       line-height: 50px;
-
+      filter: drop-shadow(0 0 6px #FFBE0B);
     }
     &_text {
       margin-bottom: 37px;
 
       color: #FFF;
-      filter: drop-shadow(0 0 6px #FFF);
 
       font-family: "Inter";
       font-size: 25px;
@@ -53,7 +52,6 @@
 
         color: #FFF;
         background: #FFBE0B;
-        filter: drop-shadow(0 0 6px #FFBE0B);
 
         font-family: "Inter";
         font-size: 25px;
@@ -98,7 +96,6 @@
         max-width: 166px;
 
         color: #FFF;
-        filter: drop-shadow(0 0 6px #FFF);
 
         font-family: "Inter";
         font-size: 25px;
@@ -154,6 +151,9 @@
   .promo-center {
     margin-right: 0;
   }
+  .promo-center_title {
+    max-width: 760px;
+  }
 }
 
 @include media-tablet-horizontal () {
@@ -208,6 +208,7 @@
 
     }
     &-center {
+      width: 100%;
       &_title {
         font-size: 32px;
 
@@ -249,6 +250,9 @@
 
     }
 
+  }
+  .promo-center_title {
+    max-width: 480px;
   }
 }
 
@@ -297,6 +301,9 @@
 
     }
 
+  }
+  .promo-center_title {
+    max-width: 300px;
   }
 }
 @include media-mobile-small () {

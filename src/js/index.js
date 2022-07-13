@@ -23,9 +23,7 @@ window.onload = onLoadHandler;
  *----------------------------------------------
  */
  var swiper = new Swiper(".mySwiper", {
-  autoplay: {
-    delay: 3000,
-  },
+
 });
 var swiper1 = new Swiper(".mySwiper1", {
   navigation: {
@@ -33,7 +31,7 @@ var swiper1 = new Swiper(".mySwiper1", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000,
+    delay: 2000,
   },
 });
 var swiper2 = new Swiper(".mySwiper2", {
@@ -66,6 +64,12 @@ var swiper6 = new Swiper(".mySwiper6", {
     prevEl: ".swiper-button-prev",
   },
 });
+var swiper7 = new Swiper(".mySwiper7", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 const btn = document.querySelector('#btn-modal');
 const modal = document.querySelector('.modal');
@@ -87,12 +91,13 @@ close.addEventListener('click', function(e) {
 });
 
 
-
-
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
-     change.target.classList.add('element-show');
+     change.target.classList.add('animate__animated');
+     change.target.classList.add('animate__fadeInLeft');
+     change.target.classList.add('animate__faster');
+
     }
   });
 }
@@ -101,7 +106,7 @@ let options = {
   threshold: [0.5] };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.element-animation');
-
 for (let elm of elements) {
   observer.observe(elm);
 }
+
